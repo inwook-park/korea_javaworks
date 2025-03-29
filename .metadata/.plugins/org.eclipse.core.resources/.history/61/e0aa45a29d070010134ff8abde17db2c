@@ -1,0 +1,44 @@
+package Operater;
+
+public class OperaterEx1 {
+
+	public static void main(String[] args) {
+		int x = 0;
+		int y = 1;
+		
+		System.out.println("*****교환전*****");
+		System.out.println("x= " + x +" y= " + y);
+		
+		//연산(교환)
+		int temp;
+		temp = x;
+		
+		
+		
+		x = y;
+		y = temp;
+		
+		System.out.println("*****교환후*****");
+		System.out.println("x= " + x +" y= " + y);
+		
+		// 산술 연산 
+		System.out.println("*****산술 연산*****");
+		int n1 = 4;
+		int n2 = 5;
+		
+		System.out.println(n1 + n2);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}
