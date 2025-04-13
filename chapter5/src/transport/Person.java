@@ -4,7 +4,7 @@ public class Person {
 	private String name;
 	private int money;
 	
-	public Person(String name,int money, int fee) {
+	public Person(String name,int money) {
 		this.name = name;
 		this.money = money;
 		
@@ -13,6 +13,7 @@ public class Person {
 			bus.take(fee);
 			this.money -= fee;
 			}
+		
 		public void personInfo() {
 			System.out.println(name + "님의 남은 돈은"+ money + "원 입니다");
 		}
