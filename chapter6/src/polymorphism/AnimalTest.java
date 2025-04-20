@@ -29,9 +29,13 @@ public class AnimalTest {
 	
 	public static void main(String[] args) {
 		AnimalTest aTest = new AnimalTest();
-		
+		//부모타입 - 자식 타입(자동 형변환), 인케스팅
 		//Animal human = new Human();
-		// horse = new Horse();
+		//Animal horse = new horse();
+		 
+		//Human human = new Human();
+		//Horse horse = new Horse();
+		
 		//human.move();
 		//horse.move();
 		

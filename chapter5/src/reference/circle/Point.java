@@ -1,4 +1,4 @@
-package reference;
+package reference.circle;
 
 
 //point는 (점)좌표을 추상화한 클래스
