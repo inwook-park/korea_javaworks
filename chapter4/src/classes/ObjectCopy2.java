@@ -1,0 +1,38 @@
+package classes;
+// 깊은 복사
+public class ObjectCopy2 {
+
+	public static void main(String[] args) {
+		//객체 생성
+		Book[] array1 = new Book[3];
+		Book[] array2 = new Book[3];
+		//객체 추가
+		array1[0] =new Book(100, "채식주의자", "한강");
+		array1[1] =new Book(101, "자바 ", "홍길동");
+		array1[2] =new Book(102, "c언어", "이승찬");
+		
+		//array2에 객체 생성(기본 생성자)
+		array2[0] = new Book();
+		array2[1] = new Book();
+		array2[2] = new Book();
+		
+		//array1을 array2에 복사(깊은 복사)
+		for(int i=0; i< array1.length; i++) {
+			array2[i].setBookNumber(array1[i].getBookNumber());
+			array2[i].setBookTitle(array1[i].getBookTitle());
+			array2[i].setAuthor(array1[i].getAuthor());
+		}
+		//array1의 첫번째 요소 수정 
+		array1[0].setBookTitle("안녕");
+		array1[0].setAuthor("호날두");
+		//향상된 포문
+		System.out.println("------array1 출력-------");
+		for(Book book : array1)
+			book.showBookInfo();
+	
+		System.out.println("------array2 출력-------");
+		for(Book book : array2)
+			book.showBookInfo();
+	}
+
+}
