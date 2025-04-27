@@ -1,6 +1,6 @@
 package objects;
 
-public class Book {
+public class Book{
 
 	int bookNumber;
 	String bookTitle;
@@ -9,6 +9,7 @@ public class Book {
 		this.bookNumber = bookNumber;
 		this.bookTitle = bookTitle;
 	}
+	
 	//객체의 정보를 문자열 출력
 	@Override
 	public String toString() {
@@ -25,6 +26,5 @@ public class Book {
 		
 		return false;
 	}
-	
-	
+
 }

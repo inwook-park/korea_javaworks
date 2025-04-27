@@ -39,7 +39,20 @@ public class Stringmethods {
 		String secondNum = jumin.substring(7);
 		System.out.println("주민번호 뒷자리: "+ secondNum);
 		
+		//indexof(문자열) - 문자열이 시작되는 위치를 리턴하는 메서드
 		
+		String subject = "자바 프로그래밍 입문";
+		int locationa1 = subject.indexOf("프로그래밍");
+		System.out.println(locationa1);
+		
+		int locationa2 = subject.indexOf("프로그래밍");
+		System.out.println(locationa2);
+		
+		if(subject.indexOf("자바") != -1) {
+			System.out.println("자바와 관련된 책이군요!!");
+		}else {
+			System.out.println("자바와 관련이 없는 책이군요!!");
+		}
 	}
 
 }
