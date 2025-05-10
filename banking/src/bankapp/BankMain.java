@@ -17,7 +17,8 @@ public class BankMain {
 			System.out.println("============================================");
 			System.out.print("선택> ");
 			
-			
+			try {
+				
 			
 			int selectNum = Integer.parseInt(scan.nextLine());
 			
@@ -44,12 +45,14 @@ public class BankMain {
 							
 			}
 			
+		}catch(NumberFormatException e) {
+			System.out.println("");}
 		}
 		scan.close();
 	}
 
 	private static void withdraw() {
-		//출금System.out.println("============================================");
+		System.out.println("============================================");
 		System.out.println("                출        금                ");
 		System.out.println("============================================");
 		
@@ -61,11 +64,17 @@ public class BankMain {
 		
 		if(findAccount(ano) != null) {
 			BankAccount account = findAccount(ano);
+			while(true) {
+				System.out.println("출금액: ");
 			
 			account.setBalance(account.getBalance()-amount);
 			System.out.println("결과: 정상 출금되었습니다. 현재 잔액: "+ account.getBalance());
-		}else {
+			break;
+		}
+	}
+		else {
 			System.out.println("결과: 계좌가 없습니다.");
+		
 		}
 	}
 		
