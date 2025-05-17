@@ -9,4 +9,6 @@
     <fullyQualifiedTypeName name="abstract_class.car.Car"/>
     <fullyQualifiedTypeName name="interfaces.remote_control.Television"/>
     <fullyQualifiedTypeName name="interfaces.remote_control.RemoteControl"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.Set"/>
 </qualifiedTypeNameHistroy>
