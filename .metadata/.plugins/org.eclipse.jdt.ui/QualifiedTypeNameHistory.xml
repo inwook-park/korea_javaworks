@@ -11,4 +11,8 @@
     <fullyQualifiedTypeName name="interfaces.remote_control.RemoteControl"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.util.Set"/>
+    <fullyQualifiedTypeName name="interfaces.bookshelf.Shelf"/>
+    <fullyQualifiedTypeName name="interfaces.bookshelf.Queue"/>
+    <fullyQualifiedTypeName name="interfaces.innerinterface.CallListener"/>
+    <fullyQualifiedTypeName name="interfaces.innerinterface.Button"/>
 </qualifiedTypeNameHistroy>

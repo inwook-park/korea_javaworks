@@ -36,7 +36,7 @@ public class BankMain {
 				withdraw();
 				break;
 			case 5:
-				System.out.println("프로그램을 종류합니다.");
+				System.out.println("프로그램을 종료합니다.");
 				sw = false;
 				break;
 			default:
