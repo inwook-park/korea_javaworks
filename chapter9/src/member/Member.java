@@ -2,6 +2,7 @@ package member;
 
 //member 클래스 - 참조 자료형 만들기
 public class Member {
+	
 	private int memberId; //회원 아이디
 	private String memberName;//회원 이름 
 	
