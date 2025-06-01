@@ -18,6 +18,7 @@ public class FileCopyTest2 {
 				BufferedInputStream bis = new BufferedInputStream(fis);
 					BufferedOutputStream bos = new BufferedOutputStream(fos)){
 			
+			//starcd c:/
 			start = System.currentTimeMillis();
 			int data;
 			while((data = bis.read()) != -1) {
