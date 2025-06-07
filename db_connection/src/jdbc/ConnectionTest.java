@@ -13,7 +13,7 @@ public class ConnectionTest {
 		Class.forName("oracle.jdbc.OracleDriver");
 		
 		conn = DriverManager.getConnection(
-				"jdbc:oracle:thin:localhost:1521/xe",
+				"jdbc:oracle:thin:@localhost:1521/xe",
 				"system",
 				"1234"
 				);
