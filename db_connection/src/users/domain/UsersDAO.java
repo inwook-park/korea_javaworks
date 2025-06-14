@@ -66,6 +66,44 @@ public class UsersDAO {
 		}		
 		return userList;
 		}
+	
+	
+	public void updateUser(Users user) {
+		String sql = "UPDATE users SET userpassword = ?, username = ?, userage = ? "+"WHERE userid = ?";
+	
+		try(Connection conn = DriverManager.getConnection(url, username, password); 
+				PreparedStatement pstmt = conn.prepareStatement(sql)){
+			
+			
+			pstmt.setString(1, user.getUserPassword());
+			pstmt.setString(2, user.getUserName());
+			pstmt.setInt(3, user.getUserAge());
+			pstmt.setString(4, user.getUserId());
+			
+			pstmt.executeUpdate();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+			
+		
+	}
+	public void deleteUser(String userId) {
+		
+		String sql = "DELETE FROM users WHERE userid = ?";
+		
+		try(Connection conn = DriverManager.getConnection(url, username, password); 
+				PreparedStatement pstmt = conn.prepareStatement(sql)){
+			
+			pstmt.setString(1, userId);
+			
+			
+			pstmt.executeUpdate();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	
 }
 	
 	
